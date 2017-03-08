@@ -1,0 +1,12 @@
+<h1> Hello From Product</h1>
+
+<%= form_for :product do |f| %>
+<%= f.text_field :cart, placeholder: 'product' %>
+<%= f.submit "add to cart"%>
+<%end%>
+<br>
+<ul>
+  <% @cart.each do |f|%>
+<li> <%= f %><br> </li>
+<%end%>
+</ul>
